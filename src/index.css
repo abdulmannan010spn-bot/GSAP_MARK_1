@@ -20,7 +20,7 @@
 html,
 body {
     width: 100%;
-    background-color: black;
+    background-color: #090B0A;
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -86,9 +86,7 @@ body {
         }
     }
 
-    .noisy {
-        @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
-    }
+    
 
     #hero {
         @apply relative z-10 min-h-dvh w-full border border-transparent;
@@ -133,6 +131,8 @@ body {
             }
         }
     }
+
+    
 
     video {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
@@ -291,7 +291,7 @@ body {
             @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
 
             button {
-                @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-2 transition-colors font-modern-negra;
+                @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b transition-colors font-modern-negra;
             }
         }
 
@@ -376,3 +376,5 @@ body {
         }
     }
 }
+
+
