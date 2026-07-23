@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import footerLeftLeaf from "../assets/footer-left-leaf.png";
 import jsmpro from "../assets/jsmpro.png";
-import input1 from "../assets/input1.mp4";
+import output from "../assets/output.mp4";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -40,7 +40,6 @@ function HeroSection() {
           trigger: "#hero",
           start: "top top",
           end: "bottom top",
-          markers: true,
           scrub: true,
         },
       })
@@ -63,12 +62,12 @@ function HeroSection() {
         pin: true,
       },
     });
-   videoref.current.onloadedmetadata = () => {
-      t1.to(videoref.current,{
-        currentTime:videoref.current.duration,
+    videoref.current.onloadedmetadata = () => {
+      t1.to(videoref.current, {
+        currentTime: videoref.current.duration,
         ease: "none",
-      })
-    }
+      });
+    };
   }, []);
   return (
     <>
@@ -106,7 +105,7 @@ function HeroSection() {
         <video
           className="video"
           ref={videoref}
-          src={input1}
+          src={output}
           muted
           playsInline
           preload="auto"
