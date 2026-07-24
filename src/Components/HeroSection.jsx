@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import footerLeftLeaf from "../assets/footer-left-leaf.png";
-import jsmpro from "../assets/jsmpro.png";
+import arrow from "../assets/arrow.png";
 import output from "../assets/output.mp4";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
@@ -78,7 +78,7 @@ function HeroSection() {
         <img
           ref={rightLeafRef}
           className="right-leaf"
-          src={jsmpro}
+          src={arrow}
           alt="right leaf"
         />
         <div className="body">
