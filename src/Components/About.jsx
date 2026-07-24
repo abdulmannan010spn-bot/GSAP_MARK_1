@@ -3,8 +3,36 @@ import abt3 from "../assets/abt3.png";
 import abt2 from "../assets/abt2.png";
 import hi from "../assets/hi.png";
 import heroLeftLeaf from "../assets/hero-left-leaf.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
 
 const About = () => {
+    useGSAP(()=>{
+    const titleSplit =SplitText.create("#about h2" ,{type:'words'})
+     const t3 =  gsap.timeline({
+            scrollTrigger:{
+                trigger:"#about",
+                start:"top center"
+            }
+        })
+
+        t3.from(titleSplit.words,{
+            opacity:0,
+            duration:1,
+            yPercent:100,
+            ease:"expo.out",
+            stagger:0.02
+        })
+
+        t3.from(".top-grid div, .bottom-grid div",{
+            opacity:0,
+            duration:1,
+            ease:"power2.inOut",
+            stagger:0.02
+        },"-=0.5")
+  
+    })
   return (
     <div id="about">
       <div className="mb-16 md:px-0 px-5">
