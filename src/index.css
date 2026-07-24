@@ -56,10 +56,17 @@ body {
 }
 
 @utility masked-img {
-  mask-image: url("/images/mask-img.png");
+  -webkit-mask-image: url("/src/assets/drink4.png");
+  mask-image: url("/src/assets/drink4.png");
+
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
   mask-position: center;
-  mask-size: 50%;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
 @layer components {
