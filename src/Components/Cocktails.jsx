@@ -38,7 +38,7 @@ const Cocktails = () => {
               {cocktailLists.map((drinks) => (
                 <li key={drinks.name}>
                   <div className="md:me-28">
-                    <h3>{drinks.name}</h3>
+                    <h3 className="font-[DM_Serif_Display]">{drinks.name}</h3>
                     <p>
                       {drinks.country}|{drinks.detail}
                     </p>
@@ -54,7 +54,7 @@ const Cocktails = () => {
               {mockTailLists.map((drinks) => (
                 <li key={drinks.name}>
                   <div className="md:me-28">
-                    <h3>{drinks.name}</h3>
+                    <h3 className="font-[DM_Serif_Display]">{drinks.name}</h3>
                     <p>
                       {drinks.country}|{drinks.detail}
                     </p>
