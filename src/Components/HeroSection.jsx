@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import output2 from "../assets/output2.mp4";
+import output4 from "../assets/output4.mp4";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -61,7 +61,7 @@ function HeroSection() {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title font-[Bodoni_Moda] uppercase text-white ">
+        <h1 className="title font-[Noto_Serif_Display] uppercase text-white font-light">
           premium
         </h1>
 
@@ -90,7 +90,7 @@ function HeroSection() {
         <video
           className="video"
           ref={videoref}
-          src={output2}
+          src={output4}
           muted
           playsInline
           preload="auto"
