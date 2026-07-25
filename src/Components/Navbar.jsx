@@ -1,5 +1,5 @@
 import { navLinks } from "../../Constants";
-import logo from "./../assets/logo.png";
+import sonata from "./../assets/sonata.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -28,13 +28,12 @@ const Navbar = () => {
     <nav>
       <div>
         <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="Logo" />
-          <p>Velvet Paur</p>
+          <img className="h-25 mt-3 " src={sonata} alt="sonata" />
         </a>
         <ul>
           {navLinks.map((links) => (
             <li key={links.id}>
-              <a href={`#${links.id}`}>{links.title}</a>
+              <a className="text-lg font-[Jura]" href={`#${links.id}`}>{links.title}</a>
             </li>
           ))}
         </ul>

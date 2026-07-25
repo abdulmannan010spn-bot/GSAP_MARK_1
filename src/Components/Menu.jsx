@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { sliderLists } from "../../Constants";
-import logo from "./../assets/logo.png";
-import x from "./../assets/x.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { StepBack, StepForward } from "lucide-react";
 
 const Menu = () => {
-
-      const [CurrentIndex, setCurrentIndex] = useState(0);
+  const [CurrentIndex, setCurrentIndex] = useState(0);
   useGSAP(() => {
     gsap.fromTo(
       "#title",
@@ -74,7 +72,7 @@ const Menu = () => {
           return (
             <button
               key={elem.id}
-              className={`font-[DM_Serif_Display] text-nowrap ${
+              className={`font-[Jura] text-nowrap font-semibold ${
                 isActive ? "text-yellow" : "text-white"
               }`}
               onClick={() => gotoslide(index)}
@@ -104,10 +102,11 @@ const Menu = () => {
               gotoslide(CurrentIndex - 1);
             }}
           >
-            <span className="font-[DM_Serif_Display] whitespace-nowrap">
+            <span className="font-[Jura] whitespace-nowrap pb-5 ">
               {prevCocktail.name}
+              
             </span>
-            <img className="mt-6 pl-18" src={logo} alt="right-arrow" />
+            <StepBack size={30} />
           </button>
           <button
             className="text-left"
@@ -115,10 +114,11 @@ const Menu = () => {
               gotoslide(CurrentIndex + 1);
             }}
           >
-            <span className="font-[DM_Serif_Display] whitespace-nowrap">
+            <span className="font-[Jura] whitespace-nowrap pb-5">
               {nextCocktail.name}
+              
             </span>
-            <img className="pl-22 mt-6" src={x} alt="right-arrow" />
+            <StepForward size={30} className="ml-36"/>
           </button>
         </div>
 
@@ -138,13 +138,13 @@ const Menu = () => {
         </div>
         <div className="recipe ">
           <div className="info pb-30">
-            <p className="font-[DM_Serif_Display]">Recipe for:</p>
-            <p id="title" className="font-[DM_Serif_Display]">
+            <p className="font-[Jura]">Recipe for:</p>
+            <p id="title" className="font-[Jura] whitespace-nowrap">
               {currentCocktail.name}
             </p>
           </div>
-          <div className="details font-[DM_Serif_Display]">
-            <h2>{currentCocktail.title}</h2>
+          <div className="details">
+            <h2 className=" font-[Jura]">{currentCocktail.title}</h2>
             <p>{currentCocktail.description}</p>
           </div>
         </div>

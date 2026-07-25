@@ -1,43 +1,21 @@
-import { useGSAP } from "@gsap/react";
-import { cocktailLists, mockTailLists } from "../../Constants";
-import insta from "../assets/insta.png";
-import jsmpro from "../assets/jsmpro.png";
-import gsap from "gsap";
+
+import { watchLists, premiumLists } from "../../Constants";
+
+
 
 const Cocktails = () => {
-  useGSAP(() => {
-    const t2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#cocktails",
-        start: "top 30%",
-        end: "bottom 80%",
-        scrub: true,
-      },
-    });
 
-    t2.from("#c-left-leaf", {
-      x:-100,y:100,
-      duration: 0.8,
-    });
-
-    t2.from("#c-right-leaf", {
-      x:100,y:100,
-      duration: 0.8,
-    });
-  });
   return (
     <>
       <section id="cocktails" className="noisy">
-        <img src={insta} id="c-left-leaf" />
-        <img src={jsmpro} id="c-right-leaf" />
         <div className="list">
           <div className="popular">
-            <h2>Most Popular Cocktails:</h2>
+            <h2>Most Popular Watches:</h2>
             <ul>
-              {cocktailLists.map((drinks) => (
+              {watchLists.map((drinks) => (
                 <li key={drinks.name}>
                   <div className="md:me-28">
-                    <h3 className="font-[DM_Serif_Display]">{drinks.name}</h3>
+                    <h3 className="font-[Jura]">{drinks.name}</h3>
                     <p>
                       {drinks.country}|{drinks.detail}
                     </p>
@@ -48,12 +26,12 @@ const Cocktails = () => {
             </ul>
           </div>
           <div className="popular">
-            <h2>Most Popular Mocktails:</h2>
+            <h2>Most Premium Watches:</h2>
             <ul>
-              {mockTailLists.map((drinks) => (
+              {premiumLists.map((drinks) => (
                 <li key={drinks.name}>
                   <div className="md:me-28">
-                    <h3 className="font-[DM_Serif_Display]">{drinks.name}</h3>
+                    <h3 className="font-[Jura]">{drinks.name}</h3>
                     <p>
                       {drinks.country}|{drinks.detail}
                     </p>

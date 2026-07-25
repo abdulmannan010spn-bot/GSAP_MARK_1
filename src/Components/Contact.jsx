@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <footer id="contact">
       <div className="content">
-        <h2 className="font-[DM_Serif_Display]">{storeInfo.heading}</h2>
+        <h2 className="font-[Jura]">{storeInfo.heading}</h2>
 
         <div>
           <h3>Visit Our Store</h3>

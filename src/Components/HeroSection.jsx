@@ -1,7 +1,5 @@
 import gsap from "gsap";
-import footerLeftLeaf from "../assets/footer-left-leaf.png";
-import arrow from "../assets/arrow.png";
-import output from "../assets/output.mp4";
+import output2 from "../assets/output2.mp4";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,7 +9,6 @@ import { useMediaQuery } from "react-responsive";
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
 function HeroSection() {
-  const rightLeafRef = useRef(null);
   const videoref = useRef();
   const isMobile = useMediaQuery({ maxWidth: 767 });
   useGSAP(() => {
@@ -34,22 +31,14 @@ function HeroSection() {
       delay: 1,
     });
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#hero",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      })
-
-      .to(".left-leaf", {
-        y: 200,
-      })
-      .to(rightLeafRef.current, {
-        y: 200,
-      });
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
 
     const StartVal = isMobile ? "top 60%" : "center 60%";
     const EndVal = isMobile ? "top 120%" : "bottom top";
@@ -72,40 +61,36 @@ function HeroSection() {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title font-[DM_Serif_Display]">MOJITO</h1>
+        <h1 className="title font-[Bodoni_Moda] uppercase text-white ">
+          premium
+        </h1>
 
-        <img className="left-leaf" src={footerLeftLeaf} alt="left leaf" />
-        <img
-          ref={rightLeafRef}
-          className="right-leaf"
-          src={arrow}
-          alt="right leaf"
-        />
         <div className="body">
           <div className="content">
-            <div className="space-y-5 hidden md:block font-[DM_Serif_Display]">
-              <p>Cool Crips & Classic</p>
-              <p className="subtitle font-[DM_Serif_Display]">
-                Sip the sprite <br />
-                of summer
+            <div className="mr-7 space-y-4 hidden md:block font-[Jura]">
+              <p className="text-lg italic">Crafted for Every Moment</p>
+              <p className="subtitle font-[Jura] italic">
+                Wear Time
+                <br />
+                With Confidence
               </p>
             </div>
-            <div className="view-cocktails">
-              <p className="subtitle font-[DM_Serif_Display]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente nemo eum veritatis quos autem fuga! Voluptatem,
-                voluptates error. Error eaque{" "}
+            <div className="view-cocktails mr-25">
+              <p className="subtitle font-[Jura] w-md italic">
+                Discover the world of Sonata, where precision meets elegance.
+                Designed for those who value style and reliability, every
+                timepiece reflects exceptional craftsmanship. <br />
               </p>
-              <a href="#cocktails">View Cocktails</a>
+              <a className="italic" href="#cocktails">View Collections</a>
             </div>
           </div>
         </div>
       </section>
-      <div className="video absolute inset-0 ">
+      <div className="video">
         <video
           className="video"
           ref={videoref}
-          src={output}
+          src={output2}
           muted
           playsInline
           preload="auto"

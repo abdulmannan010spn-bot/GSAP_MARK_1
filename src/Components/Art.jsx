@@ -1,6 +1,6 @@
-import { featureLists, goodLists } from "../../Constants";
+import { featureLists, qualityLists } from "../../Constants";
 import { CircleCheck } from "lucide-react";
-import p from "../assets/p.png";
+import watch6 from "../assets/watch6.png";
 import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -52,7 +52,7 @@ const Art = () => {
       </div>
       <div className="content gap-250">
         <ul className="space-y-4 will-fade relative z-10">
-          {goodLists.map((features, index) => (
+          {qualityLists.map((features, index) => (
             <li key={index} className="flex items-center gap-2">
               <CircleCheck />
               <p>{features}</p>
@@ -62,7 +62,7 @@ const Art = () => {
 
         <div className="cocktail-img">
           <img
-            src={p}
+            src={watch6}
             alt="cocktail"
             className="masked-img abs-center w-full h-full object-cover"
           />
@@ -77,13 +77,15 @@ const Art = () => {
           ))}
         </ul>
       </div>
-      <div className="masked-container">
-        <h2>Sip worthy perfection</h2>
-        <div id="masked-content">
-          <h3>Made with Craft , Poured with passion</h3>
-          <p>
-            This isn’t just a drink. It’s a carefully crafted moment made just
-            for you.
+      <div className="masked-container ">
+        <h2 className="font-[Jura]">Beyond Time</h2>
+
+        <div id="masked-content" >
+          <h3 className="font-[Jura] text-4xl">Where Precision Meets Elegance</h3>
+          <p className="font-[Jura]">
+            Discover watches that combine timeless craftsmanship with
+            contemporary design, delivering exceptional style, comfort, and
+            performance for every occasion.
           </p>
         </div>
       </div>
