@@ -4,7 +4,7 @@ const navLinks = [
     title: "Collections",
   },
   {
-    id: "collections",
+    id: "collection",
     title: "collections Us",
   },
   {

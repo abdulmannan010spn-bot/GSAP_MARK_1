@@ -60,10 +60,10 @@ const Art = () => {
           ))}
         </ul>
 
-        <div className="cocktail-img">
+        <div className="Watch-img">
           <img
             src={watch6}
-            alt="cocktail"
+            alt="Watch"
             className="masked-img abs-center w-full h-full object-cover"
           />
         </div>

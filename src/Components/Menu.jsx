@@ -32,7 +32,7 @@ const Menu = () => {
       { yPercent: 0, opacity: 100, ease: "power1.inOut" },
     );
     gsap.fromTo(
-      ".cocktail img",
+      ".Watch img",
       {
         opacity: 0,
         xPercent: -100,
@@ -52,21 +52,21 @@ const Menu = () => {
     setCurrentIndex(newIndex);
   };
 
-  const getCocktailAt = (indexOffset) => {
+  const getWatchAt = (indexOffset) => {
     return sliderLists[
       (CurrentIndex + indexOffset + sliderLists.length) % sliderLists.length
     ];
   };
 
-  const currentCocktail = getCocktailAt(0);
-  const prevCocktail = getCocktailAt(-1);
-  const nextCocktail = getCocktailAt(1);
+  const currentWatch = getWatchAt(0);
+  const prevWatch = getWatchAt(-1);
+  const nextWatch = getWatchAt(1);
   return (
-    <section id="menu" aria-labelledby="menu-heading">
+    <section id="craftsmanship" aria-labelledby="menu-heading">
       <h2 id="menu-heading" className="sr-only">
-        Cocktails Menu
+        Watches Menu
       </h2>
-      <nav className="cocktail-tabs" aria-label="Cocktails navigation">
+      <nav className="Watch-tabs" aria-label="Watches navigation">
         {sliderLists.map((elem, index) => {
           const isActive = index === CurrentIndex;
           return (
@@ -103,7 +103,7 @@ const Menu = () => {
             }}
           >
             <span className="font-[Jura] whitespace-nowrap pb-5 ">
-              {prevCocktail.name}
+              {prevWatch.name}
               
             </span>
             <StepBack size={30} />
@@ -115,7 +115,7 @@ const Menu = () => {
             }}
           >
             <span className="font-[Jura] whitespace-nowrap pb-5">
-              {nextCocktail.name}
+              {nextWatch.name}
               
             </span>
             <StepForward size={30} className="ml-36"/>
@@ -133,19 +133,19 @@ const Menu = () => {
         This is why the arrow (prev/next) buttons don't work while the tab
         buttons above do — the tabs aren't covered by anything.
       */}
-        <div className="cocktail">
-          <img src={currentCocktail.image} className="object-contain" alt="" />
+        <div className="Watch">
+          <img src={currentWatch.image} className="object-contain" alt="" />
         </div>
         <div className="recipe ">
           <div className="info pb-30">
             <p className="font-[Jura]">Recipe for:</p>
             <p id="title" className="font-[Jura] whitespace-nowrap">
-              {currentCocktail.name}
+              {currentWatch.name}
             </p>
           </div>
           <div className="details">
-            <h2 className=" font-[Jura]">{currentCocktail.title}</h2>
-            <p>{currentCocktail.description}</p>
+            <h2 className=" font-[Jura]">{currentWatch.title}</h2>
+            <p>{currentWatch.description}</p>
           </div>
         </div>
       </div>
