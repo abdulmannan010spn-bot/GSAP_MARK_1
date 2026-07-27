@@ -4,12 +4,12 @@ const Contact = () => {
   return (
     <footer id="contact" className="w-full min-h-screen flex justify-center">
       <div className=" w-full h-[80vh] mt-20">
-        <h2 className="font-[Jura] uppercase text-8xl whitespace-nowrap text-center text-white">
+        <h2 className="font-[Jura] uppercase text-8xl whitespace-nowrap text-center text-white font-bold">
           where to find us
         </h2>
         <div className="h-[80vh] w-full  grid grid-cols-6 grid-rows-4 gap-5 p-10">
           <div className="col-span-4 row-span-4 bg-[#141414] rounded-lg border-2 border-[#292929] p-12">
-            <h3 className="text-6xl text-white">Send Message</h3>
+            <h3 className="text-6xl text-white font-semibold">Send Message</h3>
             <div className="flex items-center justify-center gap-10 pt-8">
               <div className="flex-1 mb-3">
                 <p className="mb-1">Name</p>

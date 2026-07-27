@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import output4 from "../assets/output4.mp4";
+import videowatchoutput from "../assets/videowatchoutput.mp4";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -75,13 +75,13 @@ function HeroSection() {
                 With Confidence
               </p>
             </div>
-            <div className="view-cocktails mr-25">
+            <div className="view-Watch mr-25">
               <p className="subtitle font-[Jura] w-md italic">
                 Discover the world of Sonata, where precision meets elegance.
                 Designed for those who value style and reliability, every
                 timepiece reflects exceptional craftsmanship. <br />
               </p>
-              <a className="italic" href="#cocktails">View Collections</a>
+              <a className="italic" href="#Watch">View Collections</a>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ function HeroSection() {
         <video
           className="video"
           ref={videoref}
-          src={output4}
+          src={videowatchoutput}
           muted
           playsInline
           preload="auto"
