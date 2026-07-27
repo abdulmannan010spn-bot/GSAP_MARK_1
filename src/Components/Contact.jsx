@@ -76,19 +76,19 @@ const Contact = () => {
               <p className="text-3xl mt-2">(555) 987-6543</p>
               <p className="text-3xl ">hello@jsmcocktail.com</p>
             </div>
-            <div className="w-full h-[25vh] border-2 border-[#292929] rounded-sm mt-6">
-              <p className="p-4">Open Everyday</p>
+            <div className="w-full h-[25vh] border-2 border-[#292929] rounded-sm ">
+              <p className="p-4 text-xl">Open Everyday</p>
               <div className=" flex p-6 gap-10">
                 <div>
-                  <p>Mon–Fri</p>
-                  <p>Sat</p>
-                  <p>Sun</p>
+                  <p className="text-lg">Mon–Fri</p>
+                  <p className="text-lg">Sat</p>
+                  <p className="text-lg">Sun</p>
                 </div>
 
                 <div>
-                  <p>10:00am – 8:00pm</p>
-                  <p>10:00am – 9:00pm</p>
-                  <p>11:00am – 7:00pm</p>
+                  <p className="text-lg">10:00am – 8:00pm</p>
+                  <p className="text-lg">10:00am – 9:00pm</p>
+                  <p className="text-lg">11:00am – 7:00pm</p>
                 </div>
               </div>
             </div>
