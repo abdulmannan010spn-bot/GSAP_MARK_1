@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Gravitas+One&family=Jura:wght@300..700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..900&display=swap");
 
@@ -105,7 +105,6 @@ body {
       @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
     }
 
-
     .body {
       @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
 
@@ -141,7 +140,6 @@ body {
 
   #collections {
     @apply relative min-h-dvh w-full overflow-hidden;
-
 
     .list {
       @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5;
@@ -273,7 +271,6 @@ body {
   #craftsmanship {
     @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
 
-
     .Watch-tabs {
       @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
 
@@ -332,12 +329,7 @@ body {
   }
 
   #contact {
-    @apply relative md:mt-20 mt-0 px-4 text-center w-full overflow-hidden radial-gradient;
-
-
     .content {
-      @apply container mx-auto lg:py-14 2xl:py-32 py-16 flex flex-col justify-between gap-10 min-h-dvh;
-
       h2 {
         @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;
       }

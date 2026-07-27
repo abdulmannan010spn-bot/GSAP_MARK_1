@@ -9,10 +9,10 @@ import { SplitText } from "gsap/all";
 
 const About = () => {
   useGSAP(() => {
-    const titleSplit = SplitText.create("#collections h2", { type: "words" });
+    const titleSplit = SplitText.create("#collection h2", { type: "words" });
     const t3 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#collections",
+        trigger: "#collection",
         start: "top center",
       },
     });
