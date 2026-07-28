@@ -61,14 +61,14 @@ function HeroSection() {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title font-[Noto_Serif_Display] uppercase text-white font-light">
+        <h1 className="title font-[Noto_Serif_Display] uppercase text-white font-light whitespace-nowrap text-[9vh] lg:text-[34vh] md:text-[14vh] relative top-5">
           premium
         </h1>
 
         <div className="body">
-          <div className="content">
+          <div className="content relative left-10 top-10">
             <div className="mr-7 space-y-4 hidden md:block font-[Jura]">
-              <p className="text-lg italic">Crafted for Every Moment</p>
+              <p className="text-lg italic ">Crafted for Every Moment</p>
               <p className="subtitle font-[Jura] italic">
                 Wear Time
                 <br />
@@ -76,7 +76,7 @@ function HeroSection() {
               </p>
             </div>
             <div className="view-Watch mr-25">
-              <p className="subtitle font-[Jura] w-md italic">
+              <p className="subtitle font-[Jura] lg:w-[20vw] italic">
                 Discover the world of Sonata, where precision meets elegance.
                 Designed for those who value style and reliability, every
                 timepiece reflects exceptional craftsmanship. <br />

@@ -46,16 +46,16 @@ const Art = () => {
     });
   });
   return (
-    <div id="art">
+    <div id="art" className="lg:p-15">
       <div className="container mx-auto h-full pt-20">
         <h2 className="will-fade">The ART</h2>
       </div>
-      <div className="content gap-250">
+      <div className="content lg:gap-220">
         <ul className="space-y-4 will-fade relative z-10">
           {qualityLists.map((features, index) => (
             <li key={index} className="flex items-center gap-2">
               <CircleCheck />
-              <p>{features}</p>
+              <p className="whitespace-nowrap">{features}</p>
             </li>
           ))}
         </ul>
@@ -72,15 +72,15 @@ const Art = () => {
           {featureLists.map((features, index) => (
             <li key={index} className="flex items-center justify-start gap-2">
               <CircleCheck />
-              <p className="md:w-fit w-60">{features}</p>
+              <p className="md:w-fit w-60 whitespace-nowrap">{features}</p>
             </li>
           ))}
         </ul>
       </div>
       <div className="masked-container ">
-        <h2 className="font-[Jura]">Beyond Time</h2>
+        <h2 className="font-[Jura] md:relative md:top-15">Beyond Time</h2>
 
-        <div id="masked-content" >
+        <div id="masked-content" className="md:relative md:top-5" >
           <h3 className="font-[Jura] text-4xl">Where Precision Meets Elegance</h3>
           <p className="font-[Jura]">
             Discover watches that combine timeless craftsmanship with

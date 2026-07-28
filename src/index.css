@@ -120,7 +120,7 @@ body {
         }
 
         .view-Watch {
-          @apply space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full;
+          @apply space-y-5 lg:text-lg lg:max-w-2xs md:max-w-xs w-full ;
 
           p {
             @apply text-left;
@@ -347,4 +347,16 @@ body {
       @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
     }
   }
+}
+
+
+@media only screen and (max-width: 393px) {
+
+  .BoxGayabin14pro{
+    display: none;
+  }
+ .navpro14{
+  font-size: 0.75rem;
+ }
+
 }

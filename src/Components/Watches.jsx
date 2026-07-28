@@ -7,7 +7,7 @@ const Watches = () => {
 
   return (
     <>
-      <section id="collections" className="noisy">
+      <section id="collections" className="noisy lg:p-15">
         <div className="list">
           <div className="popular">
             <h2>Most Popular Watches:</h2>

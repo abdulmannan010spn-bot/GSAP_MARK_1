@@ -27,13 +27,13 @@ const Navbar = () => {
   return (
     <nav>
       <div>
-        <a href="#home" className="flex items-center gap-2">
-          <img className="h-25 mt-3 " src={sonata} alt="sonata" />
+        <a href="#home" className="flex items-center gap-2 ">
+          <img className="h-24 mt-3 " src={sonata} alt="sonata" />
         </a>
         <ul>
           {navLinks.map((links) => (
             <li key={links.id}>
-              <a className="text-lg font-[Jura]" href={`#${links.id}`}>{links.title}</a>
+              <a className="lg:text-lg font-[Jura] navpro14" href={`#${links.id}`}>{links.title}</a>
             </li>
           ))}
         </ul>

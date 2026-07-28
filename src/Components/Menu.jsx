@@ -62,7 +62,7 @@ const Menu = () => {
   const prevWatch = getWatchAt(-1);
   const nextWatch = getWatchAt(1);
   return (
-    <section id="craftsmanship" aria-labelledby="menu-heading">
+    <section id="craftsmanship" className="lg:p-15" aria-labelledby="menu-heading">
       <h2 id="menu-heading" className="sr-only">
         Watches Menu
       </h2>
@@ -72,7 +72,7 @@ const Menu = () => {
           return (
             <button
               key={elem.id}
-              className={`font-[Jura] text-nowrap font-semibold ${
+              className={`font-[Jura] text-nowrap font-semibold md:text-lg lg:text-4xl ${
                 isActive ? "text-yellow" : "text-white"
               }`}
               onClick={() => gotoslide(index)}
@@ -102,11 +102,11 @@ const Menu = () => {
               gotoslide(CurrentIndex - 1);
             }}
           >
-            <span className="font-[Jura] whitespace-nowrap pb-5 ">
+            <span className="font-[Jura] whitespace-nowrap pb-5 md:text-2xl">
               {prevWatch.name}
               
             </span>
-            <StepBack size={30} />
+            <StepBack size={25} />
           </button>
           <button
             className="text-left"
@@ -114,11 +114,11 @@ const Menu = () => {
               gotoslide(CurrentIndex + 1);
             }}
           >
-            <span className="font-[Jura] whitespace-nowrap pb-5">
+            <span className="font-[Jura] whitespace-nowrap pb-5 md:text-2xl">
               {nextWatch.name}
               
             </span>
-            <StepForward size={30} className="ml-36"/>
+            <StepForward size={25} className="lg:ml-30 md:ml-30"/>
           </button>
         </div>
 
@@ -138,13 +138,13 @@ const Menu = () => {
         </div>
         <div className="recipe ">
           <div className="info pb-30">
-            <p className="font-[Jura]">Recipe for:</p>
-            <p id="title" className="font-[Jura] whitespace-nowrap">
+            <p className="font-[Jura] ">Recipe for:</p>
+            <p id="title" className="font-[Jura] whitespace-nowrap md:text-5xl">
               {currentWatch.name}
             </p>
           </div>
           <div className="details">
-            <h2 className=" font-[Jura]">{currentWatch.title}</h2>
+            <h2 className=" font-[Jura] md:text-4xl">{currentWatch.title}</h2>
             <p>{currentWatch.description}</p>
           </div>
         </div>
