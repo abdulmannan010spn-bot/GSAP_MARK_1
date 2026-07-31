@@ -78,13 +78,13 @@ const Art = () => {
         </ul>
       </div>
       <div className="masked-container ">
-        <h2 className="font-[Jura] md:relative md:top-15">Beyond Time</h2>
+        <h2 className="font-[Jura] md:relative md:top-15 lg:relative lg:top-22">Beyond Time</h2>
 
         <div id="masked-content" className="md:relative md:top-5" >
           <h3 className="font-[Jura] text-4xl">Where Precision Meets Elegance</h3>
-          <p className="font-[Jura]">
+          <p className="font-[Jura] lg:text-2xl">
             Discover watches that combine timeless craftsmanship with
-            contemporary design, delivering exceptional style, comfort, and
+            contemporary design,<br /> delivering exceptional style, comfort, and
             performance for every occasion.
           </p>
         </div>
