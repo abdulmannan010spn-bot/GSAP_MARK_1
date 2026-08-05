@@ -61,6 +61,8 @@ const Menu = () => {
   const currentWatch = getWatchAt(0);
   const prevWatch = getWatchAt(-1);
   const nextWatch = getWatchAt(1);
+
+  console.log(currentWatch.image);
   return (
     <section id="craftsmanship" className="lg:p-15" aria-labelledby="menu-heading">
       <h2 id="menu-heading" className="sr-only">
