@@ -1,4 +1,4 @@
-import { featureLists, qualityLists } from "../../Constants";
+import { featureLists, qualityLists } from "../Constants";
 import { CircleCheck } from "lucide-react";
 import watch6 from "../assets/watch6.png";
 import { useMediaQuery } from "react-responsive";

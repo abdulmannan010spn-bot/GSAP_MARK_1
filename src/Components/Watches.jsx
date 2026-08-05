@@ -1,5 +1,5 @@
 
-import { watchLists, premiumLists } from "../../Constants";
+import { watchLists, premiumLists } from "../Constants";
 
 
 

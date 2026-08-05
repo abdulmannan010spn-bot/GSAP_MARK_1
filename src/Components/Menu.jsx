@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { sliderLists } from "../../Constants";
+import { sliderLists } from "../Constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { StepBack, StepForward } from "lucide-react";
@@ -143,7 +143,7 @@ const Menu = () => {
             alt={currentWatch.name}
             loading="lazy"
             draggable={false}
-            className="w-full h-full object-contain"
+            className="object-contain"
           />
         </div>
         <div className="recipe ">

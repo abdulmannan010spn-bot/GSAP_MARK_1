@@ -1,4 +1,4 @@
-import { navLinks } from "../../Constants";
+import { navLinks } from "../Constants";
 import sonata from "./../assets/sonata.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
