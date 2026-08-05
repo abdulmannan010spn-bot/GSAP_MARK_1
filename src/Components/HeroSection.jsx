@@ -75,13 +75,13 @@ function HeroSection() {
                 With Confidence
               </p>
             </div>
-            <div className="view-Watch mr-25">
-              <p className="subtitle font-[Jura] lg:w-[20vw] italic">
+            <div className="view-Watch mr-25 ">
+              <p className="subtitle font-[Jura] lg:w-[20vw] italic text-center ml-2">
                 Discover the world of Sonata, where precision meets elegance.
                 Designed for those who value style and reliability, every
                 timepiece reflects exceptional craftsmanship. <br />
               </p>
-              <a className="italic" href="#Watch">View Collections</a>
+              <a className="italic text-center relative left-4/13 hidden lg:visible md:visible" href="#Watch">View Collections</a>
             </div>
           </div>
         </div>
