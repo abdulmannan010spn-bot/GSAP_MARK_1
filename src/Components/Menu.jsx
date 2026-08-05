@@ -64,7 +64,11 @@ const Menu = () => {
 
   console.log(currentWatch.image);
   return (
-    <section id="craftsmanship" className="lg:p-15" aria-labelledby="menu-heading">
+    <section
+      id="craftsmanship"
+      className="lg:p-15"
+      aria-labelledby="menu-heading"
+    >
       <h2 id="menu-heading" className="sr-only">
         Watches Menu
       </h2>
@@ -106,7 +110,6 @@ const Menu = () => {
           >
             <span className="font-[Jura] whitespace-nowrap pb-5 md:text-2xl">
               {prevWatch.name}
-              
             </span>
             <StepBack size={25} />
           </button>
@@ -118,9 +121,8 @@ const Menu = () => {
           >
             <span className="font-[Jura] whitespace-nowrap pb-5 md:text-2xl">
               {nextWatch.name}
-              
             </span>
-            <StepForward size={25} className="lg:ml-30 md:ml-30"/>
+            <StepForward size={25} className="lg:ml-30 md:ml-30" />
           </button>
         </div>
 
@@ -136,7 +138,13 @@ const Menu = () => {
         buttons above do — the tabs aren't covered by anything.
       */}
         <div className="Watch">
-          <img src={currentWatch.image} className="object-contain" alt="" />
+          <img
+            src={currentWatch.image}
+            alt={currentWatch.name}
+            loading="lazy"
+            draggable={false}
+            className="w-full h-full object-contain"
+          />
         </div>
         <div className="recipe ">
           <div className="info pb-30">

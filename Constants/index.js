@@ -1,7 +1,7 @@
-import watch1 from "../src/assets/watch1.png";
-import watch2 from "../src/assets/watch2.png";
-import watch3 from "../src/assets/watch3.png";
-import watch4 from "../src/assets/watch4.png";
+import watch1 from "../assets/watch1.png";
+import watch2 from "../assets/watch2.png";
+import watch3 from "../assets/watch3.png";
+import watch4 from "../assets/watch4.png";
 
 const sliderLists = [
   {
