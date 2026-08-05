@@ -3,6 +3,8 @@ import watch2 from "../assets/watch2.png";
 import watch3 from "../assets/watch3.png";
 import watch4 from "../assets/watch4.png";
 
+
+
 const sliderLists = [
   {
     id: 1,
@@ -38,14 +40,15 @@ const sliderLists = [
   },
 ];
 
+
 const navLinks = [
   {
     id: "collections",
     title: "Collections",
   },
   {
-    id: "collection",
-    title: "collections Us",
+    id: "about",
+    title: "About Us",
   },
   {
     id: "craftsmanship",
@@ -57,17 +60,18 @@ const navLinks = [
   },
 ];
 
+
 const watchLists = [
   {
     name: "Sonata Volt",
     country: "India",
-    detail: "Quartz",
+    detail: "Quartz Movement",
     price: "$79",
   },
   {
     name: "Sonata Poze",
     country: "India",
-    detail: "Analog",
+    detail: "Analog Design",
     price: "$99",
   },
   {
@@ -84,6 +88,7 @@ const watchLists = [
   },
 ];
 
+
 const premiumLists = [
   {
     name: "Regalia Gold",
@@ -94,13 +99,13 @@ const premiumLists = [
   {
     name: "Titanium Edge",
     country: "India",
-    detail: "Titanium",
+    detail: "Titanium Case",
     price: "$249",
   },
   {
     name: "Royal Heritage",
     country: "India",
-    detail: "Automatic",
+    detail: "Automatic Movement",
     price: "$299",
   },
   {
@@ -110,6 +115,8 @@ const premiumLists = [
     price: "$349",
   },
 ];
+
+
 
 const profileLists = [
   {
@@ -126,12 +133,14 @@ const profileLists = [
   },
 ];
 
+
 const featureLists = [
   "Premium Stainless Steel Cases",
   "Scratch-Resistant Mineral Glass",
   "Water Resistant Design",
   "Precision Quartz Movement",
 ];
+
 
 const qualityLists = [
   "Elegant craftsmanship",
@@ -140,14 +149,16 @@ const qualityLists = [
   "Designed for every occasion",
 ];
 
+
 const storeInfo = {
   heading: "Where to Find Us",
   address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
   contact: {
     phone: "(555) 987-6543",
-    email: "hello@jsmcocktail.com",
+    email: "hello@sonatawatches.com",
   },
 };
+
 
 const socials = {
   heading: "Visit Our Showroom",
@@ -158,14 +169,26 @@ const socials = {
   },
 };
 
+
 const openingHours = [
-  { day: "Mon–Fri", time: "10:00am – 8:00pm" },
-  { day: "Sat", time: "10:00am – 9:00pm" },
-  { day: "Sun", time: "11:00am – 7:00pm" },
+  {
+    day: "Mon–Fri",
+    time: "10:00 AM – 8:00 PM",
+  },
+  {
+    day: "Saturday",
+    time: "10:00 AM – 9:00 PM",
+  },
+  {
+    day: "Sunday",
+    time: "11:00 AM – 7:00 PM",
+  },
 ];
+
 
 export {
   navLinks,
+  sliderLists,
   watchLists,
   premiumLists,
   profileLists,
@@ -174,5 +197,4 @@ export {
   openingHours,
   storeInfo,
   socials,
-  sliderLists,
 };
