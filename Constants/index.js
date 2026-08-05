@@ -1,3 +1,43 @@
+import watch1 from "../src/assets/watch1.png";
+import watch2 from "../src/assets/watch2.png";
+import watch3 from "../src/assets/watch3.png";
+import watch4 from "../src/assets/watch4.png";
+
+const sliderLists = [
+  {
+    id: 1,
+    name: "Sonata Volt",
+    image: watch1,
+    title: "Time Crafted for Every Moment",
+    description:
+      "The Sonata Volt combines a modern dial with a premium stainless steel case, delivering elegance and reliability for everyday wear.",
+  },
+  {
+    id: 2,
+    name: "Sonata Poze",
+    image: watch2,
+    title: "Minimal Design, Maximum Impact",
+    description:
+      "Featuring a slim profile, leather strap, and clean analog display, Sonata Poze complements both formal and casual outfits.",
+  },
+  {
+    id: 3,
+    name: "Sonata Prime",
+    image: watch3,
+    title: "Luxury Meets Performance",
+    description:
+      "Designed with chronograph precision and premium craftsmanship, Sonata Prime is made for those who value style and accuracy.",
+  },
+  {
+    id: 4,
+    name: "Sonata Heritage",
+    image: watch4,
+    title: "Built to Stand the Test of Time",
+    description:
+      "Inspired by timeless classics, Sonata Heritage features a refined dial, durable metal bracelet, and exceptional comfort.",
+  },
+];
+
 const navLinks = [
   {
     id: "collections",
@@ -72,18 +112,18 @@ const premiumLists = [
 ];
 
 const profileLists = [
- {
-	imgPath: "/images/profile1.png",
- },
- {
-	imgPath: "/images/profile2.png",
- },
- {
-	imgPath: "/images/profile3.png",
- },
- {
-	imgPath: "/images/profile4.png",
- },
+  {
+    imgPath: "/images/profile1.png",
+  },
+  {
+    imgPath: "/images/profile2.png",
+  },
+  {
+    imgPath: "/images/profile3.png",
+  },
+  {
+    imgPath: "/images/profile4.png",
+  },
 ];
 
 const featureLists = [
@@ -101,12 +141,12 @@ const qualityLists = [
 ];
 
 const storeInfo = {
- heading: "Where to Find Us",
- address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
- contact: {
-	phone: "(555) 987-6543",
-	email: "hello@jsmcocktail.com",
- },
+  heading: "Where to Find Us",
+  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+  contact: {
+    phone: "(555) 987-6543",
+    email: "hello@jsmcocktail.com",
+  },
 };
 
 const socials = {
@@ -124,50 +164,15 @@ const openingHours = [
   { day: "Sun", time: "11:00am – 7:00pm" },
 ];
 
-const sliderLists = [
-  {
-    id: 1,
-    name: "Sonata Volt",
-    image: "src/assets/watch1.png",
-    title: "Time Crafted for Every Moment",
-    description:
-      "The Sonata Volt combines a modern dial with a premium stainless steel case, delivering elegance and reliability for everyday wear.",
-  },
-  {
-    id: 2,
-    name: "Sonata Poze",
-    image: "src/assets/watch2.png",
-    title: "Minimal Design, Maximum Impact",
-    description:
-      "Featuring a slim profile, leather strap, and clean analog display, Sonata Poze complements both formal and casual outfits.",
-  },
-  {
-    id: 3,
-    name: "Sonata Prime",
-    image: "src/assets/watch3.png",
-    title: "Luxury Meets Performance",
-    description:
-      "Designed with chronograph precision and premium craftsmanship, Sonata Prime is made for those who value style and accuracy.",
-  },
-  {
-    id: 4,
-    name: "Sonata Heritage",
-    image: "src/assets/watch4.png",
-    title: "Built to Stand the Test of Time",
-    description:
-      "Inspired by timeless classics, Sonata Heritage features a refined dial, durable metal bracelet, and exceptional comfort.",
-  },
-];
-
 export {
- navLinks,
- watchLists,
- premiumLists,
- profileLists,
- featureLists,
- qualityLists,
- openingHours,
- storeInfo,
- socials,
- sliderLists,
+  navLinks,
+  watchLists,
+  premiumLists,
+  profileLists,
+  featureLists,
+  qualityLists,
+  openingHours,
+  storeInfo,
+  socials,
+  sliderLists,
 };

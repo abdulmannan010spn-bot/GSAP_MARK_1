@@ -20,7 +20,7 @@ const Watches = () => {
                       {elem.country}|{elem.detail}
                     </p>
                   </div>
-                  <span>-{elem.price}</span>
+                  <span>-{elem.price}</span> 
                 </li>
               ))}
             </ul>
