@@ -2,8 +2,10 @@ import { navLinks } from "../../Constants";
 import sonata from "./../assets/sonata.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 const Navbar = () => {
+  const  Scroll = useRef()
   useGSAP(() => {
     const navtween = gsap.timeline({
       scrollTrigger: {
@@ -23,9 +25,12 @@ const Navbar = () => {
         ease: "power2.inOut",
       },
     );
+    
   });
+
+  
   return (
-    <nav>
+    <nav ref={Scroll}>
       <div>
         <a href="#home" className="flex items-center gap-2 ">
           <img className="h-24 mt-3 " src={sonata} alt="sonata" />
