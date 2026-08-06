@@ -42,7 +42,7 @@ const Navbar = () => {
           <img
             src={sonata} 
             alt="Sonata"
-            className="h-16 lg:h-20 w-auto object-contain"
+            className="h-16 lg:h-20 w-auto object-contain relative lg:top-0.9 md:top-0.9 top-1"
           /><Menu className="lg:hidden md:hidden " />
         
 </div>

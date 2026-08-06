@@ -69,13 +69,13 @@ body {
   -webkit-mask-position: center;
   mask-position: center;
 
-  -webkit-mask-size: 50%; /* pick whatever % visually matches your old "contain" look */
-  mask-size: 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
 @layer components {
   main {
-    @apply w-full overflow-x-hidden;
+    @apply w-full overflow-x-hidden overflow-y-hidden;
   }
 
   nav {
@@ -246,7 +246,7 @@ body {
     }
 
     .Watch-img {
-      @apply md:w-[60vw] w-[90%] h-[50vh] md:h-[70vh] rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 ;
+      @apply md:w-[60vw] w-[90%] h-[50vh] md:h-[70vh] rounded-4xl overflow-hidden absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2;
     }
 
     .masked-container {

@@ -3,7 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 const Contact = () => {
   return (
     <footer id="contact" className="w-full min-h-screen flex justify-center">
-      <div className="w-full lg:h-[80vh] lg:mt-20">
+      <div className="w-full lg:h-[80vh] lg:mt-20 pt-28 lg:pt-32">
         <h2 className="font-[Jura] uppercase text-center text-white font-bold text-4xl md:text-6xl lg:text-8xl lg:whitespace-nowrap">
           where to find us
         </h2>
